@@ -19,7 +19,6 @@ genfstab -L /mnt >> /mnt/etc/fstab
 
 #chroot
 arch-chroot /mnt
-sh ./sys-install-chroot.sh
 
 
 
