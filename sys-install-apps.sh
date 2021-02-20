@@ -10,6 +10,13 @@ cd pamac-all
 makepkg -si
 cd
 
+#snapd
+git clone https://aur.archlinux.org/snapd.git
+cd snapd
+makepkg -si
+cd
+
+
 #wallpaper
 git clone https://github.com/Respirat0r/sys-wallpaper.git
 cd sys-wallpaper

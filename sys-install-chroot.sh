@@ -5,7 +5,7 @@ hwclock --systohc
 #locale-gen
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 locale-gen
-echo "LANG=ru_RU.UTF-8" > /etc/locale.conf
+echo "LANG=en_US.UTF-8" > /etc/locale.conf
 
 #host/hostname
 echo stalker > /etc/hostname
@@ -32,8 +32,8 @@ passwd stalker
 echo "%wheel ALL=(ALL)ALL" > /etc/sudoers
 
 #apps
-pacman -S sudo nano lxdm cinnamon gnome-extra xfce4-terminal arc-gtk-theme papirus-icon-theme nvidia-lts make flatpak snapd flameshot libreoffice qbittorrent gparted htop psensor
-git clone https://github.com/Respirat0r/sys-linux.git
+pacman -S sudo nano lxdm cinnamon gnome-extra xfce4-terminal arc-gtk-theme papirus-icon-theme nvidia-lts make flatpak  flameshot libreoffice qbittorrent gparted htop psensor
+git clone https://github.com/Respirat0r/sys-install.git
 
 #entering
 systemctl enable lxdm
