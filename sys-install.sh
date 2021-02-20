@@ -10,9 +10,7 @@ mount /dev/sda2 /mnt
 
 #Installing packages with pacstrap and pacman
 pacstrap /mnt base linux-lts linux-firmware
-pacman -Sy dhcpcd networkmanager
-systemctl enable dhcpcd.service
-systemctl enable NetworkManager.service
+pacman -Sy
 
 #fstab
 genfstab -L /mnt >> /mnt/etc/fstab

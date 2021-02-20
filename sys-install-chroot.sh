@@ -17,6 +17,7 @@ echo "127.0.0.1 localhost
 passwd
 
 #internet
+sudo pacman -Sy dhcpcd networkmanager
 systemctl enable dhcpcd.service
 systemctl enable NetworkManager.service
 
@@ -33,7 +34,6 @@ echo "%wheel ALL=(ALL)ALL" > /etc/sudoers
 
 #apps
 pacman -S sudo nano lxdm cinnamon gnome-extra xfce4-terminal arc-gtk-theme papirus-icon-theme nvidia-lts make flatpak  flameshot libreoffice qbittorrent gparted htop psensor
-git clone https://github.com/Respirat0r/sys-install.git
 
 #entering
 systemctl enable lxdm
