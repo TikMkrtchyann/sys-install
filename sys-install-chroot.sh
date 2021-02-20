@@ -26,3 +26,14 @@ systemctl enable NetworkManager.service
 pacman -Sy grub os-prober
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
+
+#add user and password
+useradd -m -g users -G wheel -s /bin/bash stalker
+passwd stalker
+echo "%wheel ALL=(ALL)ALL" > /etc/sudoers
+
+#apps
+pacman -S sudo nano lxdm cinnamon xorg gnome-extra xfce4-terminal arc-gtk-theme papirus-icon-theme nvidia-lts
+
+#entering
+systemctl enable lxdm

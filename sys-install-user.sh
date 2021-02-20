@@ -4,8 +4,8 @@ passwd stalker
 echo "%wheel ALL=(ALL)ALL" > /etc/sudoers
 
 #apps
-pacman -S sudo nano lightdm lightdm-gtk-greeter cinnamon xorg gnome-extra xfce4-terminal arc-gtk-theme papirus-icon-theme nvidia-lts
+pacman -S sudo nano lxdm cinnamon xorg gnome-extra xfce4-terminal arc-gtk-theme papirus-icon-theme nvidia-lts
 
 #entering
-systemctl enable lightdm
-systemctl start lightdm
+systemctl enable lxdm
+systemctl start lxdm
