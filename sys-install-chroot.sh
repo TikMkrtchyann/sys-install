@@ -33,8 +33,8 @@ passwd stalker
 echo "%wheel ALL=(ALL)ALL" > /etc/sudoers
 
 #apps
-pacman -S sudo nano lxdm cinnamon gnome-extra xfce4-terminal arc-gtk-theme papirus-icon-theme nvidia-lts make flatpak  flameshot libreoffice qbittorrent gparted htop psensor
-
+pacman -S sudo nano lxdm cinnamon gnome-extra xfce4-terminal base-devel arc-gtk-theme papirus-icon-theme nvidia-lts make flatpak  flameshot libreoffice qbittorrent gparted htop psensor
+cp -r /sys-install /home/stalker/Desktop
 #entering
 systemctl enable lxdm
 
