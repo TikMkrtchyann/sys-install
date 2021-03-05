@@ -3,16 +3,15 @@
 #fdisk or cfdisk
 echo "fdisk[1] or cfdisk[2]?"
 read disk
-if [[ $disk == 1 ]]
-then
+if [[ $disk == 1 ]]; then
     fdisk -l
     echo "Enter your disks name: (example: /dev/sda, /dev/sdb)"
     read diskName
     fdisk $diskName
-elif
+elif [[ $disk == 2 ]]; then
     cfdisk
 else
-    echo "pashol nahui"
+    echo pashol nahui
 fi
 
 # Boot Partitioning
@@ -33,12 +32,11 @@ mount $rootName /mnt
 
 echo "Do you have swap partition? Yes[1], No[2]"
 read VAR
-if [[  $VAR == 1  ]] 
-then
+if [[ $VAR == 1 ]]; then
     echo "Which is your swap partition? (example: /dev/sda1, /dev/sdb2)"
     read swapName
     mkswap $swapName
     swapon $swapName
-else
-    echo "Oki, let`s continue"
+elif [[ $VAR == 2 ]]; then
+    echo "Oki, continue"
 fi
