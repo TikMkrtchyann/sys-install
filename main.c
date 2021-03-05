@@ -23,6 +23,6 @@ void partitionFunc()
 
 int main()
 {
-    timezoneFunc();
+    //timezoneFunc();
     partitionFunc();
 }
