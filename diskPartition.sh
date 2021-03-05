@@ -13,8 +13,7 @@ elif
     cfdisk
 else
     echo "pashol nahui"
-
-
+fi
 
 # Boot Partitioning
 

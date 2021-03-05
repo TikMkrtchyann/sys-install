@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
 void timezoneFunc()
 {
     char timezone;
@@ -11,6 +12,7 @@ void timezoneFunc()
     else
         printf("no)))\n");
 }
+*/
 
 void partitionFunc()
 {
