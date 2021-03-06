@@ -12,9 +12,9 @@ void partitionFunc()
 void pacstrapFunc()
 {
 	system("pacman -Sy");
-	system("pacstrap /mnt base linux-lts linux-firmware sudo nano grub dhcpcd networkmanager");	
+	system("pacstrap /mnt base linux-lts nvidia-lts linux-firmware sudo nano grub dhcpcd networkmanager");	
 	system("genfstab -U /mnt >> /mnt/etc/fstab");
-	system("cp -r sys-install /mnt/home");
+	system("cp -r sys-install-chroot.sh /mnt");
 	system("arch-chroot /mnt");
 }
 
