@@ -47,6 +47,7 @@ elif [[ $DE == 2 ]]; then
 
 elif [[ $DE == 3 ]]; then
 	pacman -S plasma plasma-meta
+fi
 
 echo What Display Manager Do you want to install? LXDM[1], SDDM[2], GDM[3], LightDM[4]
 read DM 
@@ -65,6 +66,7 @@ elif [[ $DM == 3 ]]; then
 elif [[ $DM == 4 ]]; then
 	pacman -S lightdm
 	systemctl enable lightdm
+fi
 
 echo What terminal Do you want to install? Gnome-terminal[1], xfce4-terminal[2], konsole[3]
 read TERM
@@ -76,6 +78,7 @@ elif [[ $TERM == 2 ]]; then
 
 elif [[ $TERM == 3 ]]; then
 	pacman -S konsole
+fi
 
 echo Now, I say you goodbye my friend. I helped you to install this Linux and maybe, I will help you then. See you soon
 read $a

@@ -40,3 +40,25 @@ if [[ $VAR == 1 ]]; then
 elif [[ $VAR == 2 ]]; then
     echo "Oki, continue"
 fi
+
+# repo updating/package installing
+
+timedatectl set-ntp true
+pacman -Sy
+pacstrap /mnt base linux-lts linux-firmware sudo nano grub dhcpcd networkmanager
+genfstab -U /mnt >> /mnt/etc/fstab
+cp -r sys-install-chroot.sh /mnt
+arch-chroot /mnt
+
+
+
+
+
+
+
+
+
+
+
+
+
