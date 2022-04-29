@@ -45,7 +45,7 @@ fi
 
 timedatectl set-ntp true
 pacman -Sy
-pacstrap /mnt base linux-lts linux-firmware sudo nano grub dhcpcd networkmanager
+pacstrap /mnt base linux-zen linux-zen-headers nvidia-dkms linux-firmware sudo nano grub dhcpcd networkmanager
 genfstab -U /mnt >> /mnt/etc/fstab
 cp -r sys-install-chroot.sh /mnt
 arch-chroot /mnt
