@@ -24,10 +24,11 @@ systemctl enable NetworkManager.service
 
 
 #grub
-echo In what disk you want to install GRUB? example: /dev/sda, /dev/sdc
+echo In what disk you want to install bootloader? Example: /dev/sda, /dev/sdc
 read diskName
-grub-install $diskName
-grub-mkconfig -o /boot/grub/grub.cfg
+mkdir /boot/EFI
+mount $diskName /boot/EFI
+
 
 #add user and password
 echo Enter your username:
