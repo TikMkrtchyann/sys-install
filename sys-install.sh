@@ -18,7 +18,7 @@ fi
 
 echo "Which is your boot partition? (example: /dev/sda1, /dev/sdb2)"
 read bootName
-mkfs.ext2 $bootName
+mkfs.fat -F32 $bootName
 mount $bootName /boot
 
 # Root Partitioning
