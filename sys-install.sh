@@ -45,7 +45,7 @@ fi
 
 timedatectl set-ntp true
 pacman -Sy
-pacstrap /mnt base linux-zen linux-zen-headers nvidia-dkms linux-firmware sudo nano grub dhcpcd networkmanager
+pacstrap /mnt base linux-zen linux-zen-headers base-devel f86-video-amdgpu vulkan-radeon libva-mesa-driver mesa-vdpau xf86-video-vesa vulkan-radeon libva-mesa-driver mesa-vdpau linux-firmware sudo nano refind dhcpcd networkmanager
 genfstab -U /mnt >> /mnt/etc/fstab
 cp -r sys-install-chroot.sh /mnt
 arch-chroot /mnt
